@@ -1,0 +1,16 @@
+// Driver (*) <-----> (*) Car
+// A many-to-many relationship
+// A Driver can drive many cars, but a Car can also have many drivers.
+entity Tutor {
+	name String,
+    lastName String
+    age Integer
+}
+entity Student {
+	model String,
+    lastName String,
+    indexNo String
+}
+relationship ManyToMany {
+  Student{tutor} to Tutor{student}
+}
