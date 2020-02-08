@@ -1,0 +1,25 @@
+{
+  "jApplicationApp": {
+    "tutor": {
+      "home": {
+        "title": "Tutor",
+        "createLabel": "Dodaj Tutor",
+        "createOrEditLabel": "Dodaj lub edytuj: Tutor",
+        "notFound": "No Tutors found"
+      },
+      "created": "Utworzono nowy obiekt typu Tutor z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Tutor z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Tutor z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Tutor {{ id }}?"
+      },
+      "detail": {
+        "title": "Tutor"
+      },
+      "name": "Name",
+      "lastName": "Last Name",
+      "age": "Age",
+      "student": "Student"
+    }
+  }
+}

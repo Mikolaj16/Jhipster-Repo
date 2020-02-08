@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tutor">
+            <h2><span jhiTranslate="jApplicationApp.tutor.detail.title">Tutor</span> {{ tutor.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jApplicationApp.tutor.name">Name</span></dt>
+                <dd>
+                    <span>{{ tutor.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="jApplicationApp.tutor.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ tutor.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="jApplicationApp.tutor.age">Age</span></dt>
+                <dd>
+                    <span>{{ tutor.age }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tutor', tutor.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
